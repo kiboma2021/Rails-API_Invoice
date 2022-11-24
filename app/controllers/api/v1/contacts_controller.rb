@@ -15,7 +15,7 @@ class Api::V1::ContactsController < ApplicationController
         @contact = Contact.where(id: params[:id]).first
         if @contact.destroy
             head(:ok)
-        else:
+        else
             head(:unprocessable_entity)
         end
     end
