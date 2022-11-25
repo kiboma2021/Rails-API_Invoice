@@ -4,9 +4,10 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby "3.0.2"
 gem 'dotenv-rails', groups: %i[development test]
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem "rails", "~> 7.0.4"
+gem "rails"
 
 gem "devise"
+gem 'simple_token_authentication', '~> 1.0'
 # Use postgresql as the database for Active Record
 gem "pg", "~> 1.1"
 
